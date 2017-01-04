@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  expresult: MyText
+  envir: MyText
+  tester: MyString
+  casetitle: one
+
+two:
+  expresult: MyText
+  envir: MyText
+  tester: MyString
+  casetitle: two
