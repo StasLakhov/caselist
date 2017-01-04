@@ -1,0 +1,17 @@
+<%= form_for @casetitle do |f| %>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :summary %><br>
+    <%= f.text_field :summary %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

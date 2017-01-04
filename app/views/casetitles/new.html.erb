@@ -1,20 +1,6 @@
-<%= form_for @casetitle do |f| %>
+<h1>New Case Title</h1>
 
-    <p>
-      <%= f.label :title %><br>
-      <%= f.text_field :title %>
-    </p>
-
-    <p>
-      <%= f.label :summary %><br>
-      <%= f.text_field :summary %>
-    </p>
-
-    <p>
-      <%= f.submit %>
-    </p>
-
-<% end %>
+<%= render 'form' %>
 
 <br>
 <%= link_to 'Back to Cases', casetitles_path %>
