@@ -11,4 +11,13 @@
 </table>
 
 <br>
+
+<h2>Test Cases:</h2>
+
+<%= render @casetitle.testcases %>
+
+<h2>Add a test case:</h2>
+<%= render 'testcases/form' %>
+
+<br>
 <%= link_to 'Back to Cases', casetitles_path %>

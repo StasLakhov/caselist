@@ -1,0 +1,21 @@
+<%= form_for([@casetitle, Testcase.new]) do |f| %>
+  <p>
+    <%= f.label :expresult %><br>
+    <%= f.text_field :expresult %>
+  </p>
+
+  <p>
+    <%= f.label :envir %><br>
+    <%= f.text_field :envir %>
+  </p>
+
+  <p>
+    <%= f.label :tester %><br>
+    <%= f.text_field :tester %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

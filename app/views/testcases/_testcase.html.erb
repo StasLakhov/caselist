@@ -1,0 +1,23 @@
+<% @testcase.casetitle.each do |testcase| %>
+  <p>
+    <strong>Expected Result:</strong>
+    <%= testcase.expresult %>
+  </p>
+
+  <p>
+    <strong>Environment:</strong>
+    <%= testcase.envir %>
+  </p>
+
+  <p>
+    <strong>Tester:</strong>
+    <%= testcase.tester %>
+  </p>
+
+  <p>
+    <%= link_to 'Destroy TStep', [testcase.casetitle, testcase],
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+  </p>
+
+<% end %>
