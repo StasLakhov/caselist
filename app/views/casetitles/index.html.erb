@@ -1,18 +1,21 @@
 <h1>Cases:</h1>
 
-<tr>
-  <th>Case Title</th>
-  <th>Summary</th>
-<tr/>
-
-<% @casetitles.each do |t| %>
+<table>
   <tr>
-    <td><%= t.title %></td>
-    <td><%= t.summary %></td>
-    <td><%= link_to 'Show', tcase_path(t) %></td>
-    <td><%= link_to 'Edit', edit_casetitle_path(t) %></td>
-    <td><%= link_to 'Delete', t, method: :delete, data: {confirm: 'Are you sure ?'} %></td>
-  <tr/>
-<%end%>
+    <th>Case Title</th>
+    <th>Summary</th>
+  </tr>
+
+  <% @casetitles.each do |t| %>
+    <tr>
+      <td><%= t.title %></td>
+      <td><%= t.summary %></td>
+      <td><%= link_to 'Show', casetitle_path(t) %></td>
+      <td><%= link_to 'Edit', edit_casetitle_path(t) %></td>
+      <td><%= link_to 'Delete', t, method: :delete, data: {confirm: 'Are you sure ?'} %></td>
+    </tr>
+  <%end%>
+
+</table>
 
 <%= link_to 'Create New Case', new_casetitle_path %><br>

@@ -14,7 +14,7 @@ class CasetitlesController < ApplicationController
 
   def create
     @casetitle = Casetitle.create(casetitle_params)
-    if casetitle.save(casetitle_params)
+    if @casetitle.save(casetitle_params)
       redirect_to @casetitle
     else
       render 'new'
